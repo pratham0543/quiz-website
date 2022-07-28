@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>WebTechy</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="icon" href="pics/favicon.jpeg" type="image/jpeg">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous"/>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/quizWebsite.css">
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/quizWebsite.js"></script>
+
+</head>
+<body>
+
+	<div class="navbar">
+		<h2>
+			<i class="fas fa-laptop-code"></i>&nbsp;
+			<span id="heading">WEBTECHY</span>&ensp;
+			<span>Quiz website for emerging web developers.</span>
+		</h2>
+	</div>
+
+	<div id="main">
+
+		<div class="sidemenu">
+			<div><a href="#"><i class="fas fa-home"></i><span>Home</span></a></div>
+			<div><a href="#contactUs"><i class="fas fa-address-book"></i><span>Contact</span></a></div>
+			<div><a href="#feedbackDiv"><i class="fas fa-comments"></i><span>Feedback</span></a></div>
+			<div><a href="#aboutUs"><i class="fas fa-file-alt"></i><span>About</span></a></div>
+		</div>
+
+		<div class="main">
+			<p>These are some topics for web technologies quiz. You can select the topic you want to give quiz on.</p>
+			<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+				<div class="carousel-indicators">
+					<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+					<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+					<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+				</div>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="pics/html.jpg" class="d-block  w-100" alt="...">
+						<a href="htmlquestions.html" target="_blank">
+							<div class="carousel-caption  d-md-block">
+								<h5>HTML</h5>
+								<p>HTML is used to create the basic structure of a webpage on which you can apply CSS and JS to make your webpage more attractive and interactive.</p>
+							</div>
+						</a>
+					</div>
+					<div class="carousel-item">
+						<img src="pics/css.jpg" class="d-block w-100" alt="...">
+						<a href="cssquestions.html" target="_blank">
+							<div class="carousel-caption  d-md-block">
+								<h5>CSS</h5>
+								<p>CSS is used for designing a webpage and making it more attractive by adding colours and pictures.</p>
+							</div>
+						</a>
+					</div>
+					<div class="carousel-item">
+						<img id="js_Carouselimg" src="pics/js.jpg" class="d-block w-100" alt="...">
+						<a href="javascriptquestions.html"target="_blank">
+							<div class="carousel-caption  d-md-block">
+								<h5>JAVASCRIPT</h5>
+								<p>Javascript is used to make a webpage responsive and create a webpage that can interact with the user on runtime.</p>
+							</div>
+						</a>
+					</div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+		</div>
+
+		<div id="contactUs">
+			<div id="contactUsInfo">
+				<div>
+					<h2>Contact Info</h2>
+					<ul>
+						<li>
+							<span>
+								<i class="fas fa-map-marker-alt"></i>
+							</span> 
+							<span>
+								Chandigarh-Patiala National Highway (NH- 64), Jansla,<br>Rajpura, Punjab 140401
+							</span>
+						</li>
+						<li>
+							<span>
+								<i class="far fa-envelope"></i>
+							</span> 
+							<span>heavycoders121@gmail.com</span>
+						</li>
+						<li>
+							<span>
+								<i class="fas fa-phone-alt"></i>
+							</span> 
+							<span>+91-9896-204-760</span>
+						</li>
+					</ul>
+				</div>
+
+				<div id="stay-in-touch">
+					<h3>Stay in touch</h3>
+					<div id="icons">
+						<div>
+							<a href="https://www.facebook.com/" target="_blank">
+								<i class="fab fa-facebook-f"></i>
+							</a>
+						</div>
+						<div>
+							<a href="https://www.instagram.com/" target="_blank">
+								<i class="fab fa-instagram"></i>
+							</a>
+						</div>
+						<div>
+							<a href="https://www.linkedin.com/" target="_blank">
+								<i class="fab fa-linkedin-in"></i>
+							</a>
+						</div>
+						<div>
+							<a href="https://slack.com/intl/en-in/" target="_blank">
+								<i class="fab fa-slack"></i>
+							</a>
+						</div>
+						<div>
+							<a href="https://twitter.com/"target="_blank">
+								<i class="fab fa-twitter"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="contactUsForm">
+				<h2>Send a Message</h2>
+				<form autocomplete="off">
+					<div class="formBox">
+						<div class="inputBox w50">
+							<input type="text" id="fname" required>
+							<span>First Name</span>
+						</div>
+						<div class="inputBox w50">
+							<input type="text" id="lname"required>
+							<span>Last Name</span>
+						</div>
+						<div class="inputBox w50">
+							<input type="text" id="eMail"required>
+							<span>Email Address</span>
+						</div>
+						<div class="inputBox w50">
+							<input type="text" id="mnumber"required>
+							<span>Mobile Number</span>
+						</div>
+						<div class="inputBox w100">
+							<textarea id="message" required></textarea>
+							<span>Write your message here...</span>
+						</div>
+						<div class="inputBox w100">
+							<input type="submit" value="Send" id="formSubmit">
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<!-- feedback div -->
+		<div id="feedbackDiv">
+			<h1>Feedback</h1>
+			<div id="feedbackpara">
+				<p>There is always a scope for improvement. Any feedback would be appreciated. It means a lot to us.</p>
+			</div>
+			<div id="feedbackform">
+				<form autocomplete="off">
+					<div id="feedbackFormInfo" class="mt">
+						<div>
+							<input class="feedbackFormInput" type="text" placeholder="Name.." id="feedbackName"><br>
+							<span class="sp"> </span>
+						</div>
+						<div class="mt">
+							<input type="email" class="feedbackFormInput" placeholder="Email.." id="feedbackEmail"><br>
+							<span class="sp"></span>
+						</div>
+						<div class="mt">
+							<textarea placeholder="Any Suggestion..." id="feedbackSugges"></textarea><br>
+							<span class="sp"></span>
+						</div>
+					</div>
+					<div  id="feedbackQuestions">
+						<div>
+							<p>How likely would you recommend this website to your friends or colleagues ?</p>
+							<div class="ratingCircle">
+								<div class="circles 1"><div id="circ1">0</div></div>
+								<div class="circles 1"><div id="circ2">1</div></div>
+								<div class="circles 1"><div id="circ3">2</div></div>
+								<div class="circles 1"><div id="circ4">3</div></div>
+								<div class="circles 1"><div id="circ5">4</div></div>
+								<div class="circles 1"><div id="circ6">5</div></div>
+							</div>
+						</div>
+						<div class="mt">
+							<p>How would you descibe the difficulty level of questions ?</p>
+							<div class="ratingCircle">
+								<div class="circles 2"><div id="circ11">0</div></div>
+								<div class="circles 2"><div id="circ12">1</div></div>
+								<div class="circles 2"><div id="circ13">2</div></div>
+								<div class="circles 2"><div id="circ14">3</div></div>
+								<div class="circles 2"><div id="circ15">4</div></div>
+								<div class="circles 2"><div id="circ16">5</div></div>
+							</div>
+						</div>
+						<div class="mt">
+							<p>On a scale of 0 to 5 how would you describe the look and feel of the website ?</p>
+							<div class="ratingCircle">
+								<div class="circles 3"><div id="circ111">0</div></div>
+								<div class="circles 3"><div id="circ112">1</div></div>
+								<div class="circles 3"><div id="circ113">2</div></div>
+								<div class="circles 3"><div id="circ114">3</div></div>
+								<div class="circles 3"><div id="circ115">4</div></div>
+								<div class="circles 3"><div id="circ116">5</div></div>
+							</div>
+						</div>
+						<!-- Star Rating -->
+						<div  class="rating mt" >
+							<p>How many stars you would give for the overall aspects of this website ? (optional)</p>
+							<div id="stars">
+								<input type="radio" name="star" id="star1"><label class="fas" for="star1"></label>
+								<input type="radio" name="star" id="star2"><label class="fas" for="star2"></label>
+								<input type="radio" name="star" id="star3"><label class="fas"for="star3"></label>
+								<input type="radio" name="star" id="star4"><label class="fas" for="star4"></label>
+								<input type="radio" name="star" id="star5"><label class="fas" for="star5"></label></div>
+							</div>
+							<div class="inputBox  mt ratingSubmitButton">
+								<input type="submit" value="Submit" id="feedbackformSubmit">
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+
+			<div id="aboutUs">
+				<h1>About Us</h1>
+				<div id="card-holder">
+					<div id="card-container">
+						<div class="card">
+							<div class="card-image">
+								<img src="pics/pratham.jpeg">
+							</div>
+							<div class="box-content">
+								<div class="content">
+									<h2>Pratham <br>Malhotra<br>
+										<span>The Style <br>Guy</span>
+									</h2>
+									<div class="social-icons">
+										<a href="https://github.com/" target="_blank">
+											<i class="fab fa-github"></i>
+										</a>
+										<a href="https://www.facebook.com/" target="_blank">
+											<i class="fab fa-facebook-square"></i>
+										</a>
+										<a href="https://www.linkedin.com/" target="_blank">
+											<i class="fab fa-linkedin"></i>
+										</a>
+										<a href="https://twitter.com/" target="_blank">
+											<i class="fab fa-twitter"></i>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-image">
+								<img src="pics/piyush.jpg">
+							</div>
+							<div class="box-content">
+								<div class="content">
+									<h2 id="mt-top">Piyush <br>Koul<br>
+										<span>Structural <br>Specialist</span>
+									</h2>
+									<div class="social-icons">
+										<a href="https://github.com/" target="_blank">
+											<i class="fab fa-github"></i>
+										</a>
+										<a href="https://www.facebook.com/" target="_blank">
+											<i class="fab fa-facebook-square"></i>
+										</a>
+										<a href="https://www.linkedin.com/" target="_blank">
+											<i class="fab fa-linkedin"></i>
+										</a>
+										<a href="https://twitter.com/" target="_blank">
+											<i class="fab fa-twitter"></i>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-image">
+								<img src="pics/preetinder.jpg">
+							</div>
+							<div class="box-content">
+								<div class="content">
+									<h2 id="mt-top">Preetinder <br>Singh<br>
+										<span>Backend <br>Expert</span>
+									</h2>
+									<div class="social-icons">
+										<a href="https://github.com/" target="_blank">
+											<i class="fab fa-github"></i>
+										</a>
+										<a href="https://www.facebook.com/" target="_blank">
+											<i class="fab fa-facebook-square"></i>
+										</a>
+										<a href="https://www.linkedin.com/" target="_blank">
+											<i class="fab fa-linkedin"></i>
+										</a>
+										<a href="https://twitter.com/" target="_blank">
+											<i class="fab fa-twitter"></i>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="aboutUsInfo">
+					<p>
+						Heavy Coders was created in 2021 by three
+						friends. We are classmates studying in the prestigious Chitkara University. This is our first project as a team and we ought to create such projects in the future.<br>
+						As we know HTML, CSS, Javascript are essenstial components of web page construction. This Website provides practice on above mentioned languages and help students for various competitive exams within a time limit.
+					</p>
+				</div>
+				<div id="copyrightDiv">
+					<p>
+						<a>TERMS OF USE</a>
+						<span></span>
+						<a>PRIVACY POLICY</a>
+						<span></span>
+						<a>COOKIES</a>
+					</p>
+					<p>2021 Heavy Coders Copyright Inc 
+						<i class="far fa-copyright"></i>.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

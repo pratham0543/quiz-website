@@ -1,0 +1,963 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap');
+
+:root{
+	--font:'Merriweather Sans',sans-serif;
+}
+
+
+body{
+	background-image: url("../pics/greenleaves.jpg");;
+	background-position: center center;
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	padding: 0;
+	margin:0;
+	height: 100%;
+	width: 100%;
+}
+
+.main{
+	height:45vw;
+	width:90%;
+	background: transparent;
+	padding-top:20px;
+	transition:all .5s ease-out;
+	margin-top:50px;
+	margin-left:auto;
+	margin-right: auto;
+	box-shadow: 0px 25px 50px rgba(0,0,0,0.2);
+	backdrop-filter:blur(10px);
+	color: white;
+	font-family:'Merriweather Sans',sans-serif;
+	font-size: 1.5vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 5;
+	flex-direction: column;
+}
+
+#carouselExampleCaptions{
+	width: 60%;
+	
+}
+#carouselExampleCaptions img{
+	height: 100%;
+	filter: brightness(60%);
+	max-height: 600px;
+}
+.carousel-caption p{
+	font-size:1.3vw;
+	
+}
+.carousel-caption h5{
+	font-size: 2vw;
+
+}
+
+
+
+/*side icons css*/
+.sidemenu{
+	height: 18vw;
+	width: 3vw;
+	background-color: transparent;
+	position: fixed;
+	left:0px;
+	top:30vh;
+	display: flex;
+	flex-direction: column;
+	z-index: 10;
+	transition:all 1s;
+	overflow: hidden;
+}
+.sidemenu:hover{
+	width: 9vw;
+	overflow: visible;
+}
+.sidemenu div a{
+	text-decoration: none;
+	color:inherit;
+	margin-left: 0.8vw;
+}
+.sidemenu div{
+	color:white;
+	width: 94%;
+	height: 60px;
+	border-radius:0 25px 25px 0;
+	font-size:1vw;
+	display: flex;
+	align-items: center;
+
+
+}
+.sidemenu div span{
+	display: inline-block;
+	position: absolute;
+	font-family:var(--font);
+	font-size:1vw;
+	margin-left:1.5vw;
+	transition: all 1s;
+
+}
+
+.sidemenu div:nth-child(1){
+	background-color: black;
+}
+.sidemenu div:nth-child(2){
+	background-color:#1A2D40;
+}
+.sidemenu div:nth-child(3){
+	background-color: #310055;
+}
+.sidemenu div:nth-child(4){
+	background-color: #FFD200;
+}
+
+
+
+
+
+.sidemenu div:nth-child(1):hover{
+	background-color:#242424bd;
+
+
+}
+.sidemenu div:nth-child(2):hover{
+	background-color: #121e2a;
+}
+.sidemenu div:nth-child(3):hover{
+	background-color: #270342;
+}
+.sidemenu div:nth-child(4):hover{
+	background-color: #ceaa00;
+}
+/*Navbar CSS*/
+
+.navbar{
+	width: 100%;
+	height:8vw;
+	background-color:#459C98;
+	justify-content: space-between;
+	color:white;
+	font-family: sans-serif;
+	position: relative;
+	z-index:10;
+	display: flex;
+	padding:2vw ;
+	
+	
+
+}
+.navbar h2 {
+	
+	position: relative;
+	left:0vw;
+	font-family: var(--font);
+
+
+}
+
+.navbar h2 #heading{
+	font-family: var(--font) !important;
+	-webkit-text-stroke:0.06vw #383d52;
+	font-size:3vw;
+	position: relative;
+	color:#459C98;
+	font-weight: 600;
+
+}
+.navbar h2 #heading:before{
+	content:' WEBTECHY';
+	position: absolute;
+	top:0;
+	left:0;
+	width: 0;
+	height: 100%;
+	color:white;
+	-webkit-text-stroke:0vw #383d52;
+	
+	overflow:hidden;
+	animation:textOverflow 5s linear infinite;
+	animation-delay: 0.5s;
+
+
+
+	
+}
+@keyframes textOverflow{
+	0%,10%,100%{
+		width:0;
+	}
+	70%,90%{
+		width:100%
+	}
+}
+
+.navbar h2 span{
+	font-size:1vw;
+	text-transform: uppercase;
+	
+}
+.navbar h2 i{
+	font-size: 3vw;
+	-webkit-text-stroke:0.06vw #383d52;
+	color:#459C98;
+	position: relative;
+	font-weight: 600;
+
+
+}
+.navbar h2 i:after{
+	content:'\f5fc';
+	font-family: "Font Awesome 5 Free";
+	position: absolute;
+	top:0;
+	left:0;
+	width: 0;
+	height: 100%;
+	color:white;
+	overflow:hidden;
+	
+	-webkit-text-stroke:0vw #383d52;
+	animation:textOverflow 5s linear infinite;
+	animation-delay: 0.5s;
+}
+
+/*CSS FOR TIMER DIV*/
+
+
+
+
+/* About Us CSS */
+#aboutUs h1{
+	font-size: 2.5vw;
+	color: White;
+	font-weight: bold;
+	position: relative;
+	top:5vw;
+	padding-left: 7.5vw;
+
+	
+
+}
+
+#aboutUs{
+	width:100%;
+	
+	font-size: 15px;
+	margin-left:auto;
+	margin-right: auto;
+	position:relative;
+	bottom: 0px;
+	background-color:#13110d;
+	font-family: var(--font);
+	
+
+}
+#card-container{
+	display: flex;
+	justify-content: space-between;
+	width: 90%;
+}
+#card-holder{
+	margin-left:8vw;
+	margin-top:8vw;
+	display: inline-block;
+	width: 45vw;
+}
+.card{
+	position: relative;
+	width: 8vw;
+	height: 10vw;
+	background-color: white;
+	box-shadow: 10px 20px 40px rgba(0,0,0,0.4);
+	transition:1s;
+	font-family: var(--font);
+	
+	
+	
+	
+}
+.card .card-image{
+	position: absolute;
+	height: 102%;
+	width: 102%;
+	left:-1px;
+	top:-1px;
+	z-index: 1;
+	box-shadow: 10px 20px 40px rgba(0,0,0,0.4);
+	transition:1s;
+	
+}
+.card:hover{
+	transform:translateX(30%);
+}
+.card-image img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+
+}
+.card:hover .card-image{
+	transform: translateX(-100%);
+}
+.box-content{
+	width: 100%;
+	height: 100%;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.card .box-content .content{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+}
+.card .box-content .content h2{
+	text-align: center;
+	color: black;
+	font-size: 1.2vw;
+	font-weight: bold;
+}
+.card .box-content .content h2 span{
+	color:red;
+	font-size:1vw;
+
+}
+.card .box-content .content .social-icons{
+	display: flex;
+	margin-top:1vw;
+	
+}
+.card .box-content .content .social-icons a{
+	text-decoration: none;
+	margin:0.4vw;
+	width: 1.3vw;
+	height: 1.3vw;
+	background-color: #333;
+	color:white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 0.8vw;
+	transition:0.2s;
+}
+.card .box-content .content .social-icons a:hover{
+	background-color: red;
+}
+#aboutUsInfo{
+	color:white;
+	display: inline-block;
+	justify-content: center;
+	align-items: center;
+	width:45vw;
+	text-align: justify;
+	font-size: 1.2vw;
+	position: relative;
+	top:2vw;
+	padding-left:20px;
+	padding-right:20px;
+	border-left:2px solid white ;
+	overflow-wrap:break-word;
+}
+
+
+
+
+#copyrightDiv{
+	margin-top: 50px;
+	border-top:1px solid white;
+	border-bottom:1px solid white;
+	color:white;
+	margin-left: auto;
+	margin-right:auto;
+	text-align: center;
+	font-size: 0.8vw;
+	height:3.5vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color:#13110d;
+}
+#copyrightDiv p{
+	margin:0px;
+	color:#625F5F;
+	
+	
+}
+#copyrightDiv p span{
+	
+	margin-left:1vw;
+	margin-right:1vw;
+	border-left:1px solid rgb(255, 255, 255);
+
+}
+#copyrightDiv p a {
+	text-decoration:none;
+	color:#625F5F;
+	cursor: pointer;
+}
+
+
+
+/* Contact us css */
+#contactUs{
+	height:500px;
+	position: relative;
+	width:90%;
+	background-color:transparent;
+	margin:10px auto 10px auto;
+	display: flex;
+	font-family: var(--font);
+	color:white;
+
+}
+#contactUsInfo{
+	background-color:#459C98;
+	position: relative;
+	top:40px;
+	width: 400px;
+	height:calc(100% - 80px);
+	z-index: 1;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	box-shadow: 0 20px 25px rgba(0, 0, 0, 20%);
+	padding:40px;
+	padding-bottom: 40px;
+}
+#contactUsInfo h2{
+	font-weight: bold;
+	font-size: 25px;
+	
+}
+#contactUsForm{
+	padding:60px 50px;
+	padding-left:225px;
+	margin-left: -200px;
+	width: 90%;
+
+	background-color: #af82c6;
+	font-family: var(--font);
+	
+}
+#contactUsInfo ul{
+	list-style: none;
+	margin-top:22px;
+	padding:0px;
+	font-size: 15px;
+}
+#contactUsInfo ul li{
+	display: flex;
+	justify-content: flex-start;
+	margin-top:20px;
+}
+
+#contactUsInfo ul li span:nth-child(1){
+	font-size: 17px;
+	
+}
+#contactUsInfo ul li span:nth-child(2){
+	margin-left:15.5px;
+}
+#stay-in-touch{
+	color:white;
+	margin-top:-10px;
+	
+}
+#stay-in-touch h3{
+	font-size:20px;
+	font-weight: bolder;
+	letter-spacing: 0.6px;
+}
+
+#icons{
+	display: flex;
+	width:15vw;
+	justify-content: space-between;
+	margin-top:1vw;
+	font-size: 1.2vw;
+}
+#icons div{
+	transition: transform 0.25s ;
+	height:10px;
+	width:10px;
+}
+#icons div a{
+	color: white;
+}
+
+#icons div a:hover{
+	color: #363636;
+}
+
+#icons div:hover{
+	transform: translateY(-7px);
+	color: #363636;
+}
+#contactUsForm h2{
+	font-weight: bold;
+	font-size: 25px;
+}
+
+.formBox{
+	display: flex;
+	flex-wrap: wrap;
+	padding-top:15px;
+	justify-content: space-between;
+	position: relative;
+
+}
+.w50{
+	width:47%;
+}
+.w100{
+	width:100%;
+}
+.inputBox{
+	margin-bottom:35px;
+	position: relative;
+}
+.inputBox input,
+.inputBox textarea{
+	width:100%;
+	resize:none;
+	font-size:15px;
+	padding:5px 0;
+	font-weight:300;
+	color:white;
+	border:none;
+	outline:none;
+	border-bottom:1px solid #777;
+	background-color: #af82c6;
+	
+}
+.inputBox textarea{
+	height: 90px;
+
+}
+.inputBox span{
+	position:absolute;
+	left:0px;
+	padding:5px 0;
+	
+	pointer-events: none;
+	font-weight: 300;
+	transition:0.3s;
+	
+}
+.inputBox input:focus ~ span,
+.inputBox input:valid ~ span,
+.inputBox textarea:focus ~ span,
+.inputBox textarea:valid ~ span
+{
+	transform:translateY(-23px);
+	letter-spacing: 0px;
+	font-weight: 500;
+	font-size: 12px;
+}
+
+.inputBox input[type="submit"]{
+	position: relative;
+	background-color: #459C98;
+	width: 150px;
+	padding:10px;
+	border:none;
+}
+
+.inputBox input[type="submit"]:hover {
+	background-color: #387875;
+}
+
+#feedbackDiv{
+	width: 90%;
+	background-color: wheat;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+	font-family: var(--font);
+	padding: 20px;
+	padding-top:45px;
+	color:black;
+}
+#feedbackDiv h1{
+	font-weight: 600;
+	text-align: center;
+	font-size: 2.5vw;
+}
+#feedbackDiv #feedbackpara{
+	margin-top:25px;
+}
+.mt{
+	margin-top:4vw;
+}
+#feedbackDiv p{
+	text-align: center;
+	font-size: 1.4vw;
+	margin-top:10px;
+}
+#feedbackform{
+	margin-top:10px;
+	width:90%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
+}
+
+#feedbackform div .feedbackFormInput, #feedbackform div  textarea{
+	width:50%;
+	border:none;
+	border-bottom:1px solid #777;
+	outline: none;
+	transition: all 1s;
+	background-color: wheat;
+	font-weight: bold;
+}
+#feedbackform div textarea{
+	resize: none;
+}
+.sp{
+	width: 0;
+	background-color:#459C98;
+	height: 2px;
+	position: absolute;
+	transition:all 0.5s;
+}
+#feedbackform input:focus ~ span{
+	width: 38%;
+}
+
+#feedbackform input:focus{
+	border:none;
+}
+
+#feedbackQuestions{
+	margin-top:10px;
+	padding:20px;
+	height:auto;
+	width: 100%;
+
+}
+.ratingCircle{
+	display: flex;
+	justify-content: space-between;
+	width:75%;
+	margin-right: auto;
+	margin-left: auto;
+
+}
+.ratingCircle .circles{
+	height:4vw;
+	width:4vw;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	border:1px solid transparent;
+	border-radius: 50%;
+	background: linear-gradient(to right, rgba(69,156,152,1) 51%, rgba(0,212,255,1) 84%);
+	cursor: pointer;
+}
+
+.ratingCircle .circles div{
+	height: 95%;
+	width:95%;
+	background-color: white;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0 20px 25px rgb(0 0 0 / 20%);
+}
+
+.rating{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+.rating #stars{
+	width: 30%;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	justify-content: space-evenly;
+	transform: rotateY(180deg);
+}
+
+.rating input{
+	display: none;
+}
+.rating label{
+	width: 50px;
+	display: block;
+	cursor: pointer;
+}
+.rating label:before{
+	content:'\f005';
+	font-family: "Font Awesome 5 Free";
+	position: relative;
+	display: block;
+	font-size: 2vw;
+	color:rgb(252, 252, 252);
+}
+.rating label:after{
+	content:'\f005';
+	font-family: "Font Awesome 5 Free";
+	position: relative;
+	display: block;
+	font-size: 2vw;
+	color:#FFD700;
+	top:-2vw;
+	opacity: 0;
+	transition: .2s;
+	text-shadow: 0 2px 5px rgba(0,0,0,12%);
+}
+.rating label:hover:after,
+.rating label:hover~label:after,
+.rating input:checked ~ label:after{
+	opacity: 1;
+}
+
+.ratingSubmitButton{
+	margin-left: auto;
+	margin-right:auto;
+	text-align: center;
+}
+
+
+
+/* Media Queries */
+
+@media only screen and (max-width: 972px){
+	#card-holder{
+		width:45vw;
+		margin-left:5vw;
+
+	}
+	#mt-top{
+		margin-bottom:0px;
+
+	}
+	#contactUs{
+		height:45vw;
+	}
+	#contactUs h2,#stay-in-touch h3{
+		font-size: 2.5vw;
+	}
+	#contactUsInfo{
+		top:0;
+		height:100%;
+		box-shadow: none;
+		font-size:2.5vw;
+	}
+	#contactUsInfo ul span:nth-child(1){
+		font-size:1.5vw;
+	}
+	#contactUsInfo ul span:nth-child(2){
+		font-size:1.5vw;
+	}
+	#contactUsForm h2{
+		font-size:2.5vw;
+	}
+	.inputBox input,
+	.inputBox textarea{
+		font-size:1.5vw;
+	}
+	.inputBox span{
+		font-size:1.5vw;
+	}
+	.inputBox textarea{
+		height:8vw;
+	}
+	.inputBox{
+		margin-bottom: 4vw;
+	}
+	#contactUsForm{
+		padding:5vw 50px;
+		padding-left:225px;
+	}
+	#icons{
+		font-size: 2vw;
+		width: 18vw;
+	}
+	.inputBox input:focus ~ span,
+	.inputBox input:valid ~ span,
+	.inputBox textarea:focus ~ span,
+	.inputBox textarea:valid ~ span{
+		font-size:9px;
+	}
+	.inputBox input[type="submit"]{
+		width:100px;
+		padding:5px;
+		margin-top:-10px;
+
+	}
+	#feedbackform div input,#feedbackform div  textarea{
+		font-size: 1.2vw;
+		padding:10px;
+		width: 70%;
+
+	}
+	#feedbackFormInfo{
+		position: relative;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 20px;
+		padding-top: 0;
+		padding-left:50px;
+	}
+
+	#feedbackform input:focus ~ span {
+		width: 58%;
+	}
+	.mt{
+		margin-top:2vw;
+	}
+	#feedbackQuestions{
+		margin-top:0px
+	}
+	.circles div{
+		font-size: 1.8vw;
+	}
+
+
+
+}
+
+@media only screen and (max-width: 600px){
+	.navbar h2 #heading{
+		font-size: 2.5vw;
+	}
+	.navbar h2 span{
+		font-size: 1vw;
+	}
+	
+	
+	#card-holder{
+		width:72%;
+		display: block;
+		margin-left:auto;
+		margin-right:auto;
+
+	}
+	.card .box-content .content h2 {
+		font-size: 1.6vw;
+	}
+	.card .box-content .content h2 span{
+		font-size:1.3vw;
+	}
+	.card .box-content .content .social-icons a{
+		height:2.5vw;
+		width: 2.5vw;
+		font-size: 1.2vw;
+		margin:0.2vw;
+	}
+	.card{
+		width: 12vw;
+		height: 15vw;
+	}
+	.main{
+		font-size:1.8vw;
+	}
+	.carousel-caption p{
+		font-size: 1.6vw;
+	}
+	.carousel-caption h5{
+		font-size: 2.2vw;
+	}
+	.navbar{
+		height:8vw;
+		padding:5px;
+	}
+	.navbar h2{
+		font-size: 3vw;
+	}
+	#aboutUs h1{
+		padding-left:0;
+		text-align: center;
+	}
+	#aboutUsInfo{
+		display: block;
+		margin-left:auto;
+		margin-right:auto;
+		margin-top:20px;
+		border: none;
+		width:80%;
+		font-size: 1.5vw;
+	}
+	.card .box-content .content h2{
+		margin-bottom:0px;
+	}
+	#contactUsInfo{
+		padding:30px;
+		width: 100%;
+		flex-direction: row;
+		margin-bottom: 10px;
+	}
+	#contactUsInfo ul li span:nth-child(1){
+		font-size:2vw;
+	}
+	#contactUs{
+		display: flex;
+		flex-direction: column-reverse;
+		top:10px;
+		height:auto;
+		
+	}
+	#contactUsForm{
+		margin-left:0;
+		padding-left:55px;
+		width: 100%;
+	}
+	.inputBox{
+		margin-bottom: 2vw;
+	}
+	#stay-in-touch{
+		align-self: center;
+		width:30%;
+	}
+	#aboutUs{
+		margin-top: 30px;
+	}
+	.inputBox input:focus ~ span,
+	.inputBox input:valid ~ span,
+	.inputBox textarea:focus ~ span,
+	.inputBox textarea:valid ~ span{
+		font-size:6px;
+		transform:translateY(-10px);
+	}
+	.sidemenu{
+		height:25vw;
+		width:4vw;
+	}
+	.sidemenu div{
+		font-size:1.5vw;
+	}
+
+	.sidemenu div span{
+		margin-left:1.9vw;
+		font-size: 1.5vw;
+	}
+	.sidemenu:hover{
+		width:13vw;
+	}
+	#feedbackDiv{
+		padding-top:20px;
+
+	}
+	#feedbackQuestions{
+		padding: 10px;
+	}
+
+
+}

@@ -1,0 +1,185 @@
+/*instructions modal*/
+
+#modalFoot{
+	justify-content: space-between !important;
+}
+
+/*navbar*/
+
+#top{
+	margin: 0;
+	padding: 0;
+	font-size: 0;
+}
+
+.navbar{
+	position: fixed;
+	top: 0vw;
+}
+
+
+.navbar h2 #heading{
+	font-family: var(--font) !important;
+	color:white;
+	-webkit-text-stroke:0;
+	
+
+}
+.navbar h2 #heading:before{
+	content:none;
+
+
+}
+.navbar h2 i{
+	-webkit-text-stroke:0;
+	color:white;
+}
+.navbar h2 i:after{
+	content: none;
+	
+}
+/*clock*/
+
+#time{
+	width: 10vw;
+	height: 5vw;
+	box-sizing: border-box;
+	position: relative;
+	top: 0.8vw;
+	right: 1.5vw;
+	display: flex;
+	overflow: hidden;
+}
+
+#time div{
+	margin: 0vw 0.325vw;
+	box-sizing: border-box;
+	height: 3.5vw;
+	-webkit-box-reflect: below 0.39vw linear-gradient(transparent 20%,#0004);
+
+}
+
+#time div span{
+	display: block;
+	height: 75%;
+	width: 3vw;
+	background-color: #B70608;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-bottom: 0.065vw solid rgba(1,1,1,.2);
+	font-family: 'Open Sans',sans-serif;
+	font-size: 1vw;
+}
+
+#time div span:nth-child(2){
+	height: 30%;
+	font-size: 0.7vw;
+	border: none;
+	background-color: #B70608;
+}
+
+#time div:nth-child(2) span{
+	background-color: #99583C;
+}
+
+/*questions*/
+
+.question-div{
+	background-color: #f3debd;
+	color: black;
+	padding: 1.5vw;
+	width: 50vw;
+	font-size: 1.2vw;
+	margin-bottom: 1vw;
+	margin-left: 4vw;
+	border: 0.13vw solid white;
+	border-radius: 1.3vw;
+	font-family: var(--font);
+}
+
+#q1{
+	margin-top: 11vw;
+}
+
+.optiontext{
+	font-size: 1vw;
+	position: relative;
+	left: 1vw;
+	font-family: sans-serif;
+}
+
+.question-div p{
+	font-weight: bold;
+	margin-bottom: 0.7vw; 
+}
+
+/*quiz navigation*/
+
+#navigation{
+	width: 23vw;
+	background-color: #f3debd;
+	position: fixed;
+	left: 65vw;
+	top: 11vw;
+	font-family: var(--font);
+	padding: 1.2vw;
+	border: 0.13vw solid white;
+	border-radius: 0.977vw;
+}
+
+#navigation p{
+	font-size: 1.2vw;
+	margin-bottom: 0.7vw;
+}
+
+#navigation a{
+	text-decoration: none;
+	color: black;
+}
+
+#navigation div{
+	height: 3vw;
+	width: 2.5vw;
+	border: 0.13vw solid rgb(6, 153, 146);
+	display: inline-block;
+	margin-right: 0.5vw;
+	border-radius: 10%;
+	font-size: 1vw;
+}
+
+#navigation div span{
+	margin-top: 0.5vw;
+	margin-left: 0.5vw;
+}
+
+.mt-top{
+	margin-top: 0.5vw;
+}
+
+#navigation div:hover{
+	background-color: rgb(6, 153, 146) ;
+	border-color: black;
+	color: white;
+}
+
+/*finish button*/
+
+#finish{
+	color: white;
+	text-align: center;
+	height: 3vw;
+	width: 11vw;
+	border: 0.13vw solid #459C98;
+	background-color: #459C98;
+	border-radius: 1.3vw;
+	font-family: var(--font);
+	font-size: 1vw;
+	position: relative;
+	left: 43vw;
+}
+
+#finish:hover {
+	border: 0.13vw solid #387875;
+	background-color: #387875;
+}

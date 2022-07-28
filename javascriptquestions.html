@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>WebTechy JS</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="icon" href="pics/favicon.jpeg" type="image/jpeg">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous"/>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/quizWebsite.css">
+	<link rel="stylesheet" type="text/css" href="css/questioncss.css">
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/confetti.js"></script>
+	<script src="js/question.js"></script>
+
+</head>
+
+<body>
+
+	<h1 id="top">top of the page</h1>
+
+	<div class="navbar">
+		
+		<h2>
+			<i class="fas fa-laptop-code"></i>&nbsp;
+			<span id="heading">WEBTECHY</span>&ensp;
+			<span>Quiz website for emerging web developers.</span>
+		</h2>
+		
+		<div id="clock">
+			<div id="time">
+				<div><span id="minutes">00</span><span>Minutes</span>
+				</div>
+				<div><span id="seconds">00</span><span>Seconds</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<form>
+
+		<div id="q1" class="question-div" >
+
+			<p> Q No. 1 :- Which type of  language JavaScript is ?</p>
+
+			<input type="radio" class="options" name="q_1">
+			<label class="optiontext">a) Object-Oriented</label> <br>
+			<input type="radio" class="options" name="q_1"id="1">
+			<label class="optiontext">b) Object-Based</label> <br>
+			<input type="radio" class="options" name="q_1">
+			<label class="optiontext">c) Assembly-language</label> <br>
+			<input type="radio" class="options" name="q_1">
+			<label class="optiontext">d) High-level</label> <br>
+
+		</div>
+
+		<div id="q2" class="question-div">
+
+			<p>Q No. 2 :- In JavaScript, what is a block of statement ?</p>
+
+			<input type="radio" class="options" name="q_2">
+			<label class="optiontext">a) Conditional block</label> <br>
+			<input type="radio" class="options" name="q_2" id="2">
+			<label class="optiontext">b) block that combines a number of statements into a single compound statement</label> <br>
+			<input type="radio" class="options" name="q_2">
+			<label class="optiontext">c) both conditional block and a single statement</label> <br>
+			<input type="radio" class="options" name="q_2">
+			<label class="optiontext">d) block that contains a single statement</label> <br>
+
+		</div>
+
+		<div id="q3"class="question-div">
+
+			<p> Q No. 3 :- When interpreter encounters an empty statements, what it will do ?</p>
+
+			<input type="radio" class="options" name="q_3">
+			<label class="optiontext">a) Shows a warning</label> <br>
+			<input type="radio" class="options" name="q_3">
+			<label class="optiontext">b) Prompt to complete the statement</label> <br>
+			<input type="radio" class="options" name="q_3">
+			<label class="optiontext">c) Throws an error</label> <br>
+			<input type="radio" class="options" name="q_3" id="3">
+			<label class="optiontext">d) Ignores the statements</label> 
+
+		</div>
+
+		<div id="q4" class="question-div">
+
+			<p>Q No. 4 :- The "function" and "var" are known as :</p>
+
+			<input type="radio" class="options" name="q_4">
+			<label class="optiontext" >a) Keywords</label> <br>
+			<input type="radio" class="options" name="q_4">
+			<label class="optiontext">b) Data types</label> <br>
+			<input type="radio" class="options" name="q_4" id="4">
+			<label class="optiontext">c) Declaration statements</label> <br>
+			<input type="radio" class="options" name="q_4">
+			<label class="optiontext">d) Prototypes </label> 
+
+		</div>
+
+		<div id="q5" class="question-div">
+
+			<p> Q No. 5 :- Which of the following variables takes precedence over the others if the names are same ?</p>
+
+			<input type="radio" class="options" name="q_5">
+			<label class="optiontext">a) Global variable</label> <br>
+			<input type="radio" class="options" name="q_5" id="5">
+			<label class="optiontext">b) Local variable</label> <br>
+			<input type="radio" class="options" name="q_5">
+			<label class="optiontext">c) Both a) and b)</label> <br>
+			<input type="radio" class="options" name="q_5">
+			<label class="optiontext">d) None of the above</label> 
+
+		</div>
+
+		<div id="q6" class="question-div">
+
+			<p> Q No. 6 :- Which one of the following is correct way of calling the JavaScript code ?</p>
+
+			<input type="radio" class="options" name="q_6">
+			<label class="optiontext">a) Preprocessor</label> <br>
+			<input type="radio" class="options" name="q_6">
+			<label class="optiontext">b) Triggering Event</label> <br>
+			<input type="radio" class="options" name="q_6">
+			<label class="optiontext">c) RMI</label> <br>
+			<input type="radio" class="options" name="q_6" id="6">
+			<label class="optiontext">d) Functions/Methods</label> <br>
+
+		</div>
+
+		<div id="q7" class="question-div">
+
+			<p> Q No. 7 :- Which of the following variable type is volatile ? </p>
+
+			<input type="radio" class="options" name="q_7" id="7">
+			<label class="optiontext">a) Mutable variable</label> <br>
+			<input type="radio" class="options" name="q_7">
+			<label class="optiontext">b) Dynamic variable</label> <br>
+			<input type="radio" class="options" name="q_7">
+			<label class="optiontext">c) Volatile variable</label> <br>
+			<input type="radio" class="options" name="q_7">
+			<label class="optiontext">d) Immutable variable</label> <br>
+
+		</div>
+
+		<div id="q8" class="question-div">
+
+			<p>Q No. 8 :- Which of the following option is used as hexadecimal literal beginning ?</p>
+
+			<input type="radio" class="options" name="q_8">
+			<label class="optiontext">a) 00</label> <br>
+			<input type="radio" class="options" name="q_8">
+			<label class="optiontext">b) 0x</label> <br>
+			<input type="radio" class="options" name="q_8">
+			<label class="optiontext">c) 0X</label> <br>
+			<input type="radio" class="options" name="q_8" id="8">
+			<label class="optiontext">d) Both 0x and 0X</label> <br>
+
+		</div>
+
+		<div id="q9" class="question-div">
+			
+			<p> Q No. 9 :- In JavaScript, which one of the following is not considered as an error ? </p> 
+
+			<input type="radio" class="options" name="q_9">
+			<label class="optiontext">a) Syntax error</label> <br>
+			<input type="radio" class="options" name="q_9">
+			<label class="optiontext">b) Missing of semicolon</label><br>
+			<input type="radio" class="options" name="q_9" id="9">
+			<label class="optiontext">c) Division by zero</label> <br>
+			<input type="radio" class="options" name="q_9">
+			<label class="optiontext">d) Missing of Bracket</label>
+
+		</div>
+
+		<div id="q10" class="question-div">
+
+			<p>Q No. 10 :- Which of the following number object function returns the value of number ?</p>
+
+			<input type="radio" class="options" name="q_10">
+			<label class="optiontext">a) toString()</label> <br>
+			<input type="radio" class="options" name="q_10" id="10">
+			<label class="optiontext">b) valueOf()</label> <br>
+			<input type="radio" class="options" name="q_10">
+			<label class="optiontext">c) toLocalString()</label> <br>
+			<input type="radio" class="options" name="q_10">
+			<label class="optiontext">d) toPrecision()</label>
+
+		</div>
+
+		<button type="button" id="finish" data-bs-target="#myModal" data-bs-toggle="modal">Finish Attempt</button>
+		
+	</form>
+
+	<div id="navigation">
+
+		<p><b>Quiz Navigation</b></p>
+
+		<a href="#top"><div><span>1</span></div></a>
+		<a href="#q1"><div><span>2</span></div></a>
+		<a href="#q2"><div><span>3</span></div></a>
+		<a href="#q3"><div><span>4</span></div></a>
+		<a href="#q4"><div><span>5</span></div></a>
+		<a href="#q5"><div><span>6</span></div></a>
+		<a href="#q6"><div><span>7</span></div></a>
+		<a href="#q7"><div><span>8</span></div></a>
+		<a href="#q8"><div class="mt-top"><span>9</span></div></a>
+		<a href="#q9"><div class="mt-top"><span>10</span></div></a>
+
+	</div>
+
+	<div id="copyrightDiv">
+		<p>
+			<a href="#">TERMS OF USE</a>
+			<span></span>
+			<a href="#">PRIVACY POLICY</a>
+			<SPAN></SPAN>
+			<a href="#">COOKIES</a>
+		</p>
+		<p>2021 Heavy Coders Copyright Inc 
+			<i class="far fa-copyright"></i>.
+		</p>
+	</div>
+
+	<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="staticBackdropLabel"><b>Important Instructions !</b></h5>
+				</div>
+				<div class="modal-body">
+					1. There are 10 MCQ's containing 1 mark each.<br>
+					2. You will get 3 minutes to attempt all the questions.<br>
+					3. Make sure you have a proper internet connection. <br>
+					4. The timer will start as soon as you click the Start button. <br>
+					5. Test will be submitted automatically if the time gets over.<br>
+					6. Result will be shown after the submission.<br>
+				</div>
+				<div class="modal-footer" id="modalFoot">
+					<div>
+						<input type="checkbox"name="tick"id="checkButton">
+						<label for="tick">
+							<b>I have read and understood the instructions.</b>
+						</label>
+					</div>
+					<button type="button" class="btn btn-primary close" data-bs-dismiss="modal" id="strbtn">Start</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal fade" id="myModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h2 class="modal-title"><b>Result</b></h2>
+				</div>
+				<div class="modal-body">
+					<p id="countresult"></p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary" id="modalBtn1">Restart</button>
+					<a href="quizWebsite.html" target="_blank">
+						<button type="submit" class="btn btn-danger" id="modalBtn">Go To Homepage</button>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
